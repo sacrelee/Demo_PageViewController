@@ -47,6 +47,7 @@
     [self.view addSubview:_pageViewController.view];
 }
 
+// 根据返回dataSource数组中对应的viewController
 -(DataViewController *)dataViewControllerAtIndex:(NSUInteger)index
 {
     DataViewController *dvc = [[DataViewController alloc]init];
@@ -55,6 +56,7 @@
     return dvc;
 }
 
+// 返回当前viewController数据在数组中所处位置
 -(NSUInteger)indexOfViewController:(DataViewController *)dvc
 {
     return [_dataArray indexOfObject:dvc.index];
@@ -66,6 +68,7 @@
 {
     _isRequestPrePage = YES;
     NSUInteger index = [self indexOfViewController:(DataViewController *)viewController];
+    // index为0表示已经翻到最前页
     if (index == 0 || index == NSNotFound) {
         return  nil;
     }
@@ -80,7 +83,7 @@
 {
     _isRequestPrePage = NO;
     NSUInteger index = [self indexOfViewController:(DataViewController *)viewController];
-    
+    // index为数组最末表示已经翻至最后页
     if (index == NSNotFound || index == _dataArray.count - 1)
         return nil;
     pageViewController.view.userInteractionEnabled = NO;
@@ -97,7 +100,8 @@
     }
     
     if (completed) {
-        // 翻页完成计算下一次需要用到的数据 每次至多计算三页数据（当前页，前一页，后一页）
+       
+        // 通过_isRequestPrePage来判断是翻到了上一页还是下一页，进一步做出对应计算。
         int currentIndex = _isRequestPrePage ? (int)[[_dataArray firstObject] integerValue]: (int)[[_dataArray lastObject] integerValue];
         [_dataArray removeAllObjects];
         for (int i = -1; i < 2; i ++) {
