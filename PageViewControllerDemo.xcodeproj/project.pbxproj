@@ -12,6 +12,8 @@
 		E5C3C67B1ADA6C4900A096A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5C3C67A1ADA6C4900A096A9 /* Images.xcassets */; };
 		E5C3C67E1ADA6C4900A096A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5C3C67C1ADA6C4900A096A9 /* LaunchScreen.xib */; };
 		E5C3C68A1ADA6C4900A096A9 /* PageViewControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C3C6891ADA6C4900A096A9 /* PageViewControllerDemoTests.m */; };
+		E5C3C6981ADA6CA500A096A9 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C3C6971ADA6CA500A096A9 /* DataViewController.m */; };
+		E5C3C69B1ADA6CCE00A096A9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C3C69A1ADA6CCE00A096A9 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,10 @@
 		E5C3C6831ADA6C4900A096A9 /* PageViewControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PageViewControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C3C6881ADA6C4900A096A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5C3C6891ADA6C4900A096A9 /* PageViewControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageViewControllerDemoTests.m; sourceTree = "<group>"; };
+		E5C3C6961ADA6CA500A096A9 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		E5C3C6971ADA6CA500A096A9 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		E5C3C6991ADA6CCE00A096A9 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		E5C3C69A1ADA6CCE00A096A9 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,10 @@
 			children = (
 				E5C3C6771ADA6C4900A096A9 /* AppDelegate.h */,
 				E5C3C6781ADA6C4900A096A9 /* AppDelegate.m */,
+				E5C3C6991ADA6CCE00A096A9 /* RootViewController.h */,
+				E5C3C69A1ADA6CCE00A096A9 /* RootViewController.m */,
+				E5C3C6961ADA6CA500A096A9 /* DataViewController.h */,
+				E5C3C6971ADA6CA500A096A9 /* DataViewController.m */,
 				E5C3C67A1ADA6C4900A096A9 /* Images.xcassets */,
 				E5C3C67C1ADA6C4900A096A9 /* LaunchScreen.xib */,
 				E5C3C6731ADA6C4900A096A9 /* Supporting Files */,
@@ -210,7 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5C3C6981ADA6CA500A096A9 /* DataViewController.m in Sources */,
 				E5C3C6791ADA6C4900A096A9 /* AppDelegate.m in Sources */,
+				E5C3C69B1ADA6CCE00A096A9 /* RootViewController.m in Sources */,
 				E5C3C6761ADA6C4900A096A9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
