@@ -73,7 +73,7 @@
         return  nil;
     }
     // 返回数据前关闭交互，确保只允许翻一页
-    pageViewController.view.userInteractionEnabled = NO;
+//    pageViewController.view.userInteractionEnabled = NO;
     index --;
     return [self dataViewControllerAtIndex:index];
 }
@@ -86,7 +86,7 @@
     // index为数组最末表示已经翻至最后页
     if (index == NSNotFound || index == _dataArray.count - 1)
         return nil;
-    pageViewController.view.userInteractionEnabled = NO;
+//    pageViewController.view.userInteractionEnabled = NO;
     index ++;
     return [self dataViewControllerAtIndex:index];
 }

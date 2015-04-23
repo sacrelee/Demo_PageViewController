@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C986F0C5-C798-40C4-86BE-A1A13C72B890</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PageViewControllerDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>83EFFB72AE3D1A1D946E177E729C8862E92EAB6B</key>
+		<string>https://github.com/sacrelee/PageViewControllerDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PageViewControllerDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>83EFFB72AE3D1A1D946E177E729C8862E92EAB6B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sacrelee/PageViewControllerDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>83EFFB72AE3D1A1D946E177E729C8862E92EAB6B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>83EFFB72AE3D1A1D946E177E729C8862E92EAB6B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PageViewControllerDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

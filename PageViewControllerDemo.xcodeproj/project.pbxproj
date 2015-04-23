@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E524A5E51ADE4B5700267B47 /* Blog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blog.h; sourceTree = "<group>"; };
 		E5C3C6701ADA6C4900A096A9 /* PageViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C3C6741ADA6C4900A096A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5C3C6751ADA6C4900A096A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 				E5C3C6781ADA6C4900A096A9 /* AppDelegate.m */,
 				E5C3C6991ADA6CCE00A096A9 /* RootViewController.h */,
 				E5C3C69A1ADA6CCE00A096A9 /* RootViewController.m */,
+				E524A5E51ADE4B5700267B47 /* Blog.h */,
 				E5C3C6961ADA6CA500A096A9 /* DataViewController.h */,
 				E5C3C6971ADA6CA500A096A9 /* DataViewController.m */,
 				E5C3C67A1ADA6C4900A096A9 /* Images.xcassets */,
@@ -410,6 +412,7 @@
 				E5C3C68F1ADA6C4900A096A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5C3C6901ADA6C4900A096A9 /* Build configuration list for PBXNativeTarget "PageViewControllerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +421,7 @@
 				E5C3C6921ADA6C4900A096A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
