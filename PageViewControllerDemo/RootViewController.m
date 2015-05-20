@@ -72,7 +72,7 @@
     if (index == 0 || index == NSNotFound) {
         return  nil;
     }
-    // 返回数据前关闭交互，确保只允许翻一页
+    // 返回数据前关闭交互，确保只允许翻一页（有BUG 已作废，改进在代理方法中）
 //    pageViewController.view.userInteractionEnabled = NO;
     index --;
     return [self dataViewControllerAtIndex:index];
@@ -86,12 +86,21 @@
     // index为数组最末表示已经翻至最后页
     if (index == NSNotFound || index == _dataArray.count - 1)
         return nil;
+    
+    // 返回数据前关闭交互，确保只允许翻一页（有BUG 已作废，改进在代理方法中）
 //    pageViewController.view.userInteractionEnabled = NO;
     index ++;
     return [self dataViewControllerAtIndex:index];
 }
 
 #pragma - mark PageViewController Delegate
+// 翻页控制的改进在此处。
+-(void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray *)pendingViewControllers
+{
+    // 将要进行动画时才关闭交互，避免上下swipe手势引起永久性失去交互
+//    [_pageViewController.view setUserInteractionEnabled:NO];
+}
+
 -(void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed
 {
     // 无论有无翻页，只要动画结束就恢复交互。
